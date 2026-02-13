@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initPageLoader();
   initHeader();
   initMobileNav();
+  initMobileSearch();
   initScrollReveal();
   initFilters();
   initPropertyCards();
@@ -90,6 +91,63 @@ function initMobileNav() {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') closeMenu();
   });
+}
+
+
+/* --- Mobile Search Panel --- */
+function initMobileSearch() {
+  const searchBtn = document.getElementById('mobile-search-btn');
+  const searchPanel = document.getElementById('mobile-search-panel');
+  const submitBtn = document.getElementById('mobile-search-submit');
+
+  if (!searchBtn || !searchPanel) return;
+
+  // Create backdrop
+  const backdrop = document.createElement('div');
+  backdrop.className = 'mobile-search-backdrop';
+  document.body.appendChild(backdrop);
+
+  let isOpen = false;
+
+  function openSearch() {
+    isOpen = true;
+    searchPanel.classList.add('mobile-search-panel--open');
+    backdrop.classList.add('mobile-search-backdrop--visible');
+  }
+
+  function closeSearch() {
+    isOpen = false;
+    searchPanel.classList.remove('mobile-search-panel--open');
+    backdrop.classList.remove('mobile-search-backdrop--visible');
+  }
+
+  function toggleSearch() {
+    if (isOpen) {
+      closeSearch();
+    } else {
+      openSearch();
+    }
+  }
+
+  searchBtn.addEventListener('click', toggleSearch);
+  backdrop.addEventListener('click', closeSearch);
+
+  // Close on Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && isOpen) closeSearch();
+  });
+
+  // Submit scrolls to properties and closes panel
+  if (submitBtn) {
+    submitBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      closeSearch();
+      const propertiesSection = document.getElementById('propiedades');
+      if (propertiesSection) {
+        propertiesSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
 }
 
 

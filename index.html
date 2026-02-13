@@ -69,6 +69,14 @@
         </a>
       </div>
 
+      <!-- Mobile Search Button -->
+      <button class="mobile-search-btn" id="mobile-search-btn" aria-label="Buscar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8" />
+          <path d="M21 21l-4.35-4.35" />
+        </svg>
+      </button>
+
       <!-- Hamburger (Mobile) -->
       <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
         <span class="hamburger-line"></span>
@@ -78,6 +86,42 @@
 
     </div>
   </header>
+
+  <!-- Mobile Search Panel -->
+  <div class="mobile-search-panel" id="mobile-search-panel">
+    <div class="mobile-search-panel-inner">
+      <div class="mobile-search-field">
+        <label for="mobile-search-operation">Operacion</label>
+        <select id="mobile-search-operation">
+          <option value="">Todas</option>
+          <option value="venta">Venta</option>
+          <option value="alquiler">Alquiler</option>
+        </select>
+      </div>
+      <div class="mobile-search-field">
+        <label for="mobile-search-type">Tipo</label>
+        <select id="mobile-search-type">
+          <option value="">Todos</option>
+          <option value="casa">Casa</option>
+          <option value="departamento">Departamento</option>
+          <option value="terreno">Terreno</option>
+          <option value="local">Local Comercial</option>
+        </select>
+      </div>
+      <div class="mobile-search-field">
+        <label for="mobile-search-location">Ubicacion</label>
+        <select id="mobile-search-location">
+          <option value="">Todas</option>
+          <option value="ciudad">Ciudad</option>
+          <option value="godoy-cruz">Godoy Cruz</option>
+          <option value="las-heras">Las Heras</option>
+          <option value="lujan">Lujan de Cuyo</option>
+          <option value="maipu">Maipu</option>
+        </select>
+      </div>
+      <button class="mobile-search-submit" id="mobile-search-submit">Buscar</button>
+    </div>
+  </div>
 
   <!-- Mobile Nav Overlay -->
   <div class="nav-mobile-overlay" id="nav-mobile-overlay">
