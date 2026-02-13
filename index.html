@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Inmobiliaria Oviedo - Su socio de confianza en bienes raices en Mendoza. Venta, alquiler y tasacion de propiedades.">
+  <title>Inmobiliaria Oviedo | Bienes Raices en Mendoza</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- Page Loader -->
+  <div class="page-loader" id="page-loader">
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- =========================
+       HEADER
+       ========================= -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+
+      <!-- Logo -->
+      <a href="index.html" class="header-logo" id="header-logo">
+        <div class="header-logo-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3 21V9l9-7 9 7v12H3zm2-2h14V9.8L12 4.5 5 9.8V19zm3-6h8v2H8v-2zm0-3h8v2H8v-2z" />
+          </svg>
+        </div>
+        <div class="header-logo-text">
+          OVIEDO
+          <span>Inmobiliaria</span>
+        </div>
+      </a>
+
+      <!-- Vertical Separator -->
+      <div class="nav-separator"></div>
+
+      <!-- Desktop Nav -->
+      <nav class="nav-desktop" id="nav-desktop">
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link nav-link--active">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Sobre Nosotros</a></li>
+          <li><a href="#propiedades" class="nav-link">Venta</a></li>
+          <li><a href="#propiedades" class="nav-link">Alquileres</a></li>
+        </ul>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="nav-cta">
+        <a href="#contacto" class="nav-cta-btn">
+          Contactanos
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Hamburger (Mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Menu" aria-expanded="false">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Nav Overlay -->
+  <div class="nav-mobile-overlay" id="nav-mobile-overlay">
+    <nav class="nav-mobile-links">
+      <a href="#inicio" class="nav-mobile-link">Inicio</a>
+      <a href="#nosotros" class="nav-mobile-link">Sobre Nosotros</a>
+      <a href="#propiedades" class="nav-mobile-link">Venta</a>
+      <a href="#propiedades" class="nav-mobile-link">Alquileres</a>
+      <a href="#servicios" class="nav-mobile-link">Servicios</a>
+    </nav>
+    <div class="nav-mobile-cta">
+      <a href="#contacto" class="nav-cta-btn">
+        Contactanos
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+        </svg>
+      </a>
+    </div>
+    <div class="nav-mobile-contact">
+      <div class="nav-mobile-contact-label">Telefono</div>
+      <a href="tel:+542614252315" class="nav-mobile-contact-phone">261 425 2315</a>
+    </div>
+  </div>
+
+
+  <!-- =========================
+       HERO
+       ========================= -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <p class="hero-tagline">Inmobiliaria de confianza en Mendoza</p>
+      <h1 class="hero-title">Encontra tu propiedad ideal</h1>
+      <p class="hero-subtitle">
+        Mas de 30 anos acompanando a familias mendocinas en la busqueda de su hogar. Profesionalismo, transparencia y
+        compromiso.
+      </p>
+
+      <!-- Hero Search -->
+      <div class="hero-search" id="hero-search">
+        <div class="search-row">
+          <div class="search-field">
+            <label for="search-operation">Operacion</label>
+            <select id="search-operation">
+              <option value="">Todas</option>
+              <option value="venta">Venta</option>
+              <option value="alquiler">Alquiler</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label for="search-type">Tipo</label>
+            <select id="search-type">
+              <option value="">Todos</option>
+              <option value="casa">Casa</option>
+              <option value="departamento">Departamento</option>
+              <option value="terreno">Terreno</option>
+              <option value="local">Local Comercial</option>
+            </select>
+          </div>
+          <div class="search-field">
+            <label for="search-location">Ubicacion</label>
+            <select id="search-location">
+              <option value="">Todas</option>
+              <option value="ciudad">Ciudad</option>
+              <option value="godoy-cruz">Godoy Cruz</option>
+              <option value="las-heras">Las Heras</option>
+              <option value="lujan">Lujan de Cuyo</option>
+              <option value="maipu">Maipu</option>
+            </select>
+          </div>
+          <button class="btn-search" id="hero-search-btn">Buscar</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Indicator -->
+    <div class="hero-scroll">
+      <span class="hero-scroll-text">Explorar</span>
+      <div class="hero-scroll-line"></div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       PROPERTIES LISTING
+       ========================= -->
+  <section class="section" id="propiedades">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-label">Propiedades</span>
+        <h2 class="heading-2">Nuestro catalogo actual</h2>
+        <p>Exploracion curada de las mejores oportunidades en el mercado inmobiliario mendocino.</p>
+      </div>
+
+      <!-- Filters -->
+      <div class="filters-bar reveal">
+        <button class="filters-toggle" id="filters-toggle" aria-expanded="false" aria-controls="filters-panel">
+          Filtrar propiedades
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 9l6 6 6-6" />
+          </svg>
+        </button>
+
+        <div class="filters-panel" id="filters-panel">
+          <div class="filters-grid">
+            <div class="filter-group">
+              <label for="filter-operation">Operacion</label>
+              <select id="filter-operation">
+                <option value="">Todas</option>
+                <option value="Venta">Venta</option>
+                <option value="Alquiler">Alquiler</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="filter-type">Tipo</label>
+              <select id="filter-type">
+                <option value="">Todos</option>
+                <option value="Casa">Casa</option>
+                <option value="Departamento">Departamento</option>
+                <option value="Terreno">Terreno</option>
+                <option value="Local Comercial">Local Comercial</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="filter-location">Ubicacion</label>
+              <select id="filter-location">
+                <option value="">Todas</option>
+                <option value="Ciudad">Ciudad</option>
+                <option value="Godoy Cruz">Godoy Cruz</option>
+                <option value="Las Heras">Las Heras</option>
+                <option value="Lujan de Cuyo">Lujan de Cuyo</option>
+                <option value="Maipu">Maipu</option>
+              </select>
+            </div>
+            <div class="filter-group">
+              <label for="filter-price-min">Precio Min.</label>
+              <input type="number" id="filter-price-min" placeholder="Desde">
+            </div>
+            <div class="filter-group">
+              <label for="filter-price-max">Precio Max.</label>
+              <input type="number" id="filter-price-max" placeholder="Hasta">
+            </div>
+          </div>
+          <div class="filters-actions">
+            <button class="btn-filter-apply" id="btn-filter-apply">Aplicar</button>
+            <button class="btn-filter-clear" id="btn-filter-clear">Limpiar</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sort -->
+      <div class="sort-bar reveal">
+        <div class="results-count" id="results-count">
+          <strong>9</strong> propiedades encontradas
+        </div>
+        <select class="sort-select" id="sort-select" aria-label="Ordenar propiedades">
+          <option value="recent">Mas recientes</option>
+          <option value="price-asc">Menor precio</option>
+          <option value="price-desc">Mayor precio</option>
+          <option value="area-desc">Mayor superficie</option>
+        </select>
+      </div>
+
+      <!-- Properties Grid -->
+      <div class="properties-grid" id="properties-grid">
+        <!-- Cards rendered via JS -->
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- =========================
+       SERVICES
+       ========================= -->
+  <section class="section section--alt" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Servicios</span>
+        <h2 class="heading-2">Soluciones inmobiliarias integrales</h2>
+        <p>Acompanamos cada etapa de su operacion con profesionalismo y atencion personalizada.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <div class="service-card reveal reveal-delay-1">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+              <polyline points="9,22 9,12 15,12 15,22" />
+            </svg>
+          </div>
+          <h3 class="heading-3">Compra y Venta</h3>
+          <p>Gestion completa del proceso de compraventa, desde la tasacion hasta la escrituracion, con el respaldo de
+            nuestra trayectoria.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-2">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 3h-8l-2 4h12l-2-4z" />
+              <line x1="12" y1="11" x2="12" y2="17" />
+              <line x1="9" y1="14" x2="15" y2="14" />
+            </svg>
+          </div>
+          <h3 class="heading-3">Alquileres</h3>
+          <p>Administracion integral de alquileres residenciales y comerciales. Nos encargamos de cada detalle para su
+            tranquilidad.</p>
+        </div>
+
+        <div class="service-card reveal reveal-delay-3">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" />
+              <polyline points="14,2 14,8 20,8" />
+              <line x1="16" y1="13" x2="8" y2="13" />
+              <line x1="16" y1="17" x2="8" y2="17" />
+              <polyline points="10,9 9,9 8,9" />
+            </svg>
+          </div>
+          <h3 class="heading-3">Tasaciones</h3>
+          <p>Valuaciones profesionales respaldadas por conocimiento del mercado local y metodologias actualizadas.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       CTA BANNER
+       ========================= -->
+  <section class="cta-banner" id="nosotros">
+    <div class="container reveal">
+      <span class="section-label" style="color: rgba(255,255,255,0.4);">Sobre Nosotros</span>
+      <h2 class="heading-2">Mas de tres decadas de trayectoria</h2>
+      <p>En Inmobiliaria Oviedo construimos relaciones basadas en la confianza y la transparencia. Cada operacion
+        refleja nuestro compromiso con la excelencia y el asesoramiento honesto.</p>
+      <a href="#contacto" class="btn-cta">
+        Contactanos
+        <svg viewBox="0 0 24 24" fill="none">
+          <path d="M5 12h14m-7-7l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       CONTACT SECTION
+       ========================= -->
+  <section class="section" id="contacto">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Contacto</span>
+        <h2 class="heading-2">Hablemos de su proyecto</h2>
+        <p>Estamos a su disposicion para asesorarlo. Complete el formulario o comuniquese directamente con nuestro
+          equipo.</p>
+      </div>
+
+      <div class="detail-layout reveal" style="max-width: 960px; margin: 0 auto;">
+        <div class="detail-main">
+          <form class="contact-form" id="contact-form">
+            <div class="form-field">
+              <label for="contact-name">Nombre completo</label>
+              <input type="text" id="contact-name" placeholder="Su nombre" required>
+            </div>
+            <div class="form-field">
+              <label for="contact-email">Email</label>
+              <input type="email" id="contact-email" placeholder="correo@ejemplo.com" required>
+            </div>
+            <div class="form-field">
+              <label for="contact-phone">Telefono</label>
+              <input type="tel" id="contact-phone" placeholder="261 XXX XXXX">
+            </div>
+            <div class="form-field">
+              <label for="contact-message">Mensaje</label>
+              <textarea id="contact-message" placeholder="Cuentenos en que podemos ayudarlo..." rows="5"
+                required></textarea>
+            </div>
+            <button type="submit" class="btn-contact">Enviar Consulta</button>
+          </form>
+        </div>
+        <div class="detail-sidebar">
+          <div class="contact-card">
+            <h3 class="heading-3" style="margin-bottom: var(--space-lg);">Datos de contacto</h3>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Mendoza, Argentina</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              <span>261 425 2315</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+              </svg>
+              <span>261 513 7008</span>
+            </div>
+            <div class="footer-contact-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                <circle cx="12" cy="12" r="10" />
+                <line x1="2" y1="12" x2="22" y2="12" />
+                <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z" />
+              </svg>
+              <span>Horario: Lun - Vie, 9:00 a 18:00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================
+       FOOTER
+       ========================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <!-- Brand -->
+        <div class="footer-brand">
+          <a href="index.html" class="header-logo" style="margin-bottom: var(--space-md); display: inline-flex;">
+            <div class="header-logo-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M3 21V9l9-7 9 7v12H3zm2-2h14V9.8L12 4.5 5 9.8V19zm3-6h8v2H8v-2zm0-3h8v2H8v-2z" />
+              </svg>
+            </div>
+            <div class="header-logo-text">
+              OVIEDO
+              <span>Inmobiliaria</span>
+            </div>
+          </a>
+          <p>Su socio de confianza en el mercado inmobiliario mendocino. Profesionalismo y transparencia desde hace mas
+            de 30 anos.</p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h4 class="footer-heading">Navegacion</h4>
+          <ul class="footer-links">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#propiedades">Propiedades</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- Propiedades -->
+        <div>
+          <h4 class="footer-heading">Propiedades</h4>
+          <ul class="footer-links">
+            <li><a href="#propiedades">Casas en Venta</a></li>
+            <li><a href="#propiedades">Departamentos</a></li>
+            <li><a href="#propiedades">Alquileres</a></li>
+            <li><a href="#propiedades">Terrenos</a></li>
+            <li><a href="#propiedades">Locales Comerciales</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+          <h4 class="footer-heading">Contacto</h4>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>Mendoza, Argentina</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path
+                d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
+            </svg>
+            <span>261 425 2315</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>info@inmobiliariaoviedo.com</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copyright">2026 Inmobiliaria Oviedo. Todos los derechos reservados.</p>
+        <div class="footer-legal-links">
+          <a href="#">Politica de Privacidad</a>
+          <a href="#">Terminos y Condiciones</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
